@@ -23,7 +23,6 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
-   border: 1px solid red;
 }
 
 .header__logo-nav {
@@ -35,12 +34,13 @@
 }
 .logo {
    font-family: Raleway;
-   font-size: 26px;
-   letter-spacing: 0.78px;
+   font-size: 24px;
+   letter-spacing: 0.72px;
    display: flex;
    
-   @media (max-width:992px) {
-      font-size: 24px;
+   @media (min-width:992px) {
+      font-size: 26px;
+      letter-spacing: 0.78px;
    }
 
    &:hover {
@@ -90,36 +90,54 @@
 }
 
 .header__contacts {
-   display: flex;
-   align-items: center; 
-   flex-wrap: wrap;
-   justify-items: flex-end;
+
+   @media (min-width: 992px) {      
+      display: flex;
+      align-items: center;        
+   }
+   
 }
 .contacts {
-   border: 1px solid green;
 }
 .contacts__item {
-   border: 1px solid blue;
-   &:not(:last-child) {
-    margin: 0px 30px 0px 0px;  
+
+   @media (max-width: 992px) {      
+       &:not(:last-child) {
+         margin: 0px 0px 10px 0px;  
+       }
    }
+
+   @media (min-width: 992px) {      
+      &:not(:last-child) {
+        margin: 0px 30px 0px 0px;  
+      }
+  }
 }
 
 .contacts__link {
    color: #757575;
    font-weight: 500;
-   letter-spacing: 0.28px;
+   letter-spacing: 0.24px;
    &:hover {
       color: #2196f3;
       cursor: pointer;
    }
+
+   font-size: 12px;
+
+   @media (min-width: 992px) {      
+      font-size: 14px;
+      letter-spacing: 0.28px;
+   }
 }
 
 .contacts__link-envelope {
+   line-height: 12px;
    padding: 0px 0px 0px 26px;   
 }
 
 .contacts__link-smartphone {
+   line-height: 16px;  
    padding: 0px 0px 0px 20px;
 }
 .contacts__icon-envelope {
@@ -140,12 +158,12 @@
    min-height: 16px;
    background-image: url('../images/header/smartphone.svg');
    background-repeat: no-repeat;
-   background-position: left center;
+   background-size: contain;
 }
 
 .contacts__icon-smartphone--hover {
    min-height: 16px;
    background-image: url('../images/header/smartphone_hover.svg');
    background-repeat: no-repeat;
-   background-position: left center;
+   background-size: contain;
 }
