@@ -34,5 +34,17 @@ contactsLinkSmartphone.addEventListener('mouseleave', () => {
       contactsLinkSmartphone.classList.remove('contacts__icon-smartphone--hover');
    }
    contactsLinkSmartphone.classList.add('contacts__icon-smartphone');
-
 });
+
+/*--menu burger*/
+$(document).ready(function () {
+   $('.header__burger').click(function (event) {
+      $('.header__burger,.header__nav').toggleClass('active');
+      $('body').toggleClass('lock');
+   })
+})
+
+// const burger = document.querySelector(".header__burger");
+// burger.addEventListener('mouseenter', function () {
+//    burger.style.backgroundcolor = '#2196F3';
+// });
