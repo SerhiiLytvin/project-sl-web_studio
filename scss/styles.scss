@@ -118,9 +118,12 @@ body {
       @media (max-width:767px) {
          transform: rotate(45deg);
          top: 7px;
-         &:hover {
+      }
+   }
+
+   &.active:hover:before {
+      @media (max-width:767px) {        
             background-color: #2196F3;
-         }   
       }
    }
 
@@ -137,6 +140,12 @@ body {
          &:hover {
             background-color: #2196F3;
          }
+      }
+   }
+
+   &.active:hover:after {
+      @media (max-width:767px) {        
+            background-color: #2196F3;
       }
    }
 }
@@ -187,6 +196,8 @@ body {
       margin: 0px 53px 0px 0px;
    }
 
+   position: relative;
+
    @media (max-width:992px) {
       &:not(:last-child) {
          margin: 0px 50px 0px 0px;
@@ -207,6 +218,19 @@ body {
    &:hover {
       color: #2196F3;
       cursor: pointer;
+
+      @media (min-width:767px) {
+         &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            left: 0px;
+            bottom: -28px;
+            background-color: #2196F3;
+            border-radius: 2px;
+         } 
+      }
    }
 
    @media (max-width:767px) {
@@ -224,7 +248,8 @@ body {
    }
 
    @media (max-width: 992px) { 
-      display: block;
+      flex-direction: column;
+      align-items: flex-start;
       
       &>:not(:last-child) {
          margin: 0px 0px 10px 0px;  
@@ -240,7 +265,8 @@ body {
 .contacts {
 }
 .contacts__item {
-   @media (max-width: 767px) {      
+   @media (max-width: 767px) { 
+      font-weight: 500;     
       &:not(:last-child) {
          & > a{
             font-size: 24px;
@@ -327,6 +353,8 @@ body {
 }
 
 .header__social {
+   display: flex;
+   margin: 0px -10px;
    @media (min-width:767px) {
       display: none;
    }
@@ -334,6 +362,25 @@ body {
 .social {
 }
 .social__item {
+   padding: 0px 10px;
+   position: relative;
+
+   &:not(:last-child) {
+      &::after {
+         content: '';
+         position: absolute;
+         top: 0;
+         right: 0;
+         width: 1px;
+         height: 22px;
+         background-color: #21212133;
+      }
+   }
 }
 .social__link {
+   color: #2196F3;
+   font-size: 18px;
+   font-weight: 500;
+   line-height: 122.222%;
+   letter-spacing: 0.36px;
 }

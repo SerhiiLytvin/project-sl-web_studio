@@ -212,7 +212,9 @@ h1, h2, h3, h4, h5, h6 {
     transform: rotate(45deg);
     top: 7px;
   }
-  .header__burger.active:before:hover {
+}
+@media (max-width: 767px) {
+  .header__burger.active:hover:before {
     background-color: #2196F3;
   }
 }
@@ -227,6 +229,11 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 7px;
   }
   .header__burger.active:after:hover {
+    background-color: #2196F3;
+  }
+}
+@media (max-width: 767px) {
+  .header__burger.active:hover:after {
     background-color: #2196F3;
   }
 }
@@ -271,6 +278,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.menu__item {
+  position: relative;
+}
 .menu__item:not(:last-child) {
   margin: 0px 53px 0px 0px;
 }
@@ -294,6 +304,18 @@ h1, h2, h3, h4, h5, h6 {
   color: #2196F3;
   cursor: pointer;
 }
+@media (min-width: 767px) {
+  .menu__link:hover:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0px;
+    bottom: -28px;
+    background-color: #2196F3;
+    border-radius: 2px;
+  }
+}
 @media (max-width: 767px) {
   .menu__link {
     font-size: 40px;
@@ -310,7 +332,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 992px) {
   .header__contacts {
-    display: block;
+    flex-direction: column;
+    align-items: flex-start;
   }
   .header__contacts > :not(:last-child) {
     margin: 0px 0px 10px 0px;
@@ -325,6 +348,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 767px) {
+  .contacts__item {
+    font-weight: 500;
+  }
   .contacts__item:not(:last-child) > a {
     font-size: 24px;
     letter-spacing: 0.48px;
@@ -411,8 +437,34 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.header__social {
+  display: flex;
+  margin: 0px -10px;
+}
 @media (min-width: 767px) {
   .header__social {
     display: none;
   }
+}
+
+.social__item {
+  padding: 0px 10px;
+  position: relative;
+}
+.social__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 22px;
+  background-color: rgba(33, 33, 33, 0.2);
+}
+
+.social__link {
+  color: #2196F3;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 122.222%;
+  letter-spacing: 0.36px;
 }

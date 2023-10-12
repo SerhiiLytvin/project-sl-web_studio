@@ -43,8 +43,3 @@ $(document).ready(function () {
       $('body').toggleClass('lock');
    })
 })
-
-// const burger = document.querySelector(".header__burger");
-// burger.addEventListener('mouseenter', function () {
-//    burger.style.backgroundcolor = '#2196F3';
-// });
