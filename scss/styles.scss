@@ -417,6 +417,9 @@ body {
 .page__activity {
 }
 
+.page__team {
+}
+
 /*----MAIN-BLOCK*/
 
 .main-block { 
@@ -586,4 +589,67 @@ body {
 }
 .item-activity__image {
    padding: 0px 0px 79.46% 0px;
+}
+
+/*----TEAM*/
+
+.team {
+   background-color: #F5F4FA;
+   padding: 94px 0px;
+}
+.team__container {
+}
+.team__header {
+   text-align: center;
+   font-size: 36px;
+   letter-spacing: 1.08px;
+   margin: 0px 0px 50px 0px;
+}
+.team__row {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0px -15px;
+}
+.team__column {
+   padding: 0px 15px;
+   flex: 0 1 25%;   
+}
+.team__item {
+}
+.item-team {
+   padding-bottom: 30px;
+   border-radius: 0px 0px 4px 4px;
+   background-color: #FFF;
+   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.item-team__image {
+   padding: 0px 0px 96.3% 0px;
+   margin: 0px 0px 30px 0px;
+}
+.item-team__text {
+   text-align: center;
+   font-size: 16px;
+   letter-spacing: 0.48px;
+   margin: 0px 0px 28px 0px;
+
+   &>:not(:last-child) {
+      margin: 0px 0px 10px 0px;
+   }
+}
+.item-team__name {
+   font-weight: 500;   
+}
+.item-team__position {
+   color: #757575;
+   font-weight: 400;
+}
+.item-team__social {
+   padding: 0px 32px;
+   display: flex;
+   margin: 0px -17px;
+   img {      
+      display: block;
+      padding: 0px 17px;
+      flex: 0 0 25%;      
+   }
 }
