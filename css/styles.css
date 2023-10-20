@@ -587,17 +587,17 @@ h1, h2, h3, h4, h5, h6 {
 .advantages__row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0px -15px;
+  margin: 0px -15px -30px;
 }
 
 .advantages__column {
   flex: 0 1 25%;
   padding: 0px 15px;
+  margin: 0px 0px 30px 0px;
 }
 @media (max-width: 1200px) {
   .advantages__column {
     flex: 1 1 50%;
-    margin: 0px 0px 30px 0px;
   }
 }
 @media (max-width: 497px) {
@@ -609,7 +609,10 @@ h1, h2, h3, h4, h5, h6 {
 .item-advantages__icon {
   border-radius: 4px;
   background: #F5F4FA;
-  padding: 25px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0px;
   margin: 0px 0px 30px 0px;
 }
 
@@ -667,6 +670,11 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #F5F4FA;
   padding: 94px 0px;
 }
+@media (max-width: 1110px) {
+  .team {
+    padding: 60px 0px;
+  }
+}
 
 .team__header {
   text-align: center;
@@ -674,16 +682,38 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1.08px;
   margin: 0px 0px 50px 0px;
 }
+@media (max-width: 1110px) {
+  .team__header {
+    margin: 0px 0px 50px 0px;
+  }
+}
+@media (max-width: 560px) {
+  .team__header {
+    margin: 0px 0px 30px 0px;
+  }
+}
 
 .team__row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0px -15px;
+  justify-content: center;
+  margin: 0px -15px -30px;
 }
 
 .team__column {
-  padding: 0px 15px;
+  padding: 0px 15px 30px;
   flex: 0 1 25%;
+  max-width: 100%;
+}
+@media (max-width: 1110px) {
+  .team__column {
+    flex: 0 1 50%;
+  }
+}
+@media (max-width: 500px) {
+  .team__column {
+    flex: 0 1 100%;
+  }
 }
 
 .item-team {
@@ -703,6 +733,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   letter-spacing: 0.48px;
   margin: 0px 0px 28px 0px;
+  padding: 0px 10px;
 }
 .item-team__text > :not(:last-child) {
   margin: 0px 0px 10px 0px;
@@ -717,13 +748,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-.item-team__social {
-  padding: 0px 32px;
+.social-item {
+  max-width: 202px;
+  padding: 0px 10px;
+  margin: 0 auto;
   display: flex;
-  margin: 0px -17px;
+  justify-content: space-between;
 }
-.item-team__social img {
+.social-item .advantages__item {
   display: block;
-  padding: 0px 17px;
+  height: 20px;
   flex: 0 0 25%;
 }
