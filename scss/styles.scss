@@ -295,7 +295,7 @@ body {
       &:last-child {
          margin: 0px 0px 32px 0px;
          & > a {
-            font-size: 34px;
+            font-size: 30px;
             letter-spacing: 0.68px;            
          }   
       }
@@ -373,6 +373,8 @@ body {
 
 .header__social {
    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
    margin: 0px -10px;
    @media (min-width:767px) {
       display: none;
@@ -418,6 +420,9 @@ body {
 }
 
 .page__team {
+}
+
+.page__clients {
 }
 
 /*----MAIN-BLOCK*/
@@ -614,7 +619,9 @@ body {
    margin: 0px 0px 50px 0px;
 
    @media (max-width: 1110px) {
-      margin: 0px 0px 50px 0px;
+      margin: 0px 0px 30px 0px;     
+      font-size: 28px;
+      letter-spacing: 0.84px;   
    }   
 
    @media (max-width: 560px) {
@@ -676,9 +683,69 @@ body {
    margin: 0 auto;
    display: flex;
    justify-content: space-between;
-     .advantages__item {      
-         display: block;
-         height: 20px;
-         flex: 0 0 25%;      
-      }
+}
+
+.social-item__link:before {
+}
+
+.social-item__link:hover {   
+}
+
+/*----CLIENTS*/
+
+.clients {
+   background-color: #FFF;
+   padding: 94px 0px;
+
+   @media (max-width: 1110px) {
+      padding: 60px 0px;   
+   }
+}
+.clients__container {
+}
+.clients__header {
+   text-align: center;
+   font-size: 36px;
+   letter-spacing: 1.08px;
+   margin: 0px 0px 50px 0px;
+
+   @media (max-width: 1110px) {
+      margin: 0px 0px 30px 0px;
+      font-size: 28px;
+      letter-spacing: 0.84px;
+   }   
+}
+.clients__row {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: 0px -15px -30px;
+}
+.clients__column {
+   flex: 0 1 16.6667%;
+   padding: 0px 15px;
+   margin: 0px 0px 30px 0px;
+
+   @media (max-width: 1110px) {
+      flex: 0 1 33.333%;
+   }
+
+   @media (max-width: 500px) {
+      flex: 0 1 50%;       
+   }
+   
+}
+.clients__item {
+   padding: 15px 0px;
+   border-radius: 4px;
+   border: 1px solid #AFB1B8;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.item-column {
+}
+.item-column__icon {
+}
+.item-column__link {
 }
