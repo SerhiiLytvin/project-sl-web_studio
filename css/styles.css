@@ -760,6 +760,13 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
 }
 
+.social-item__link:hover svg path {
+  fill: white;
+}
+.social-item__link:hover svg rect {
+  fill: white;
+}
+
 /*----CLIENTS*/
 .clients {
   background-color: #FFF;
@@ -815,6 +822,13 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.item-column__link svg path {
+  transition: all 0.5s ease 0s;
+}
+.item-column__link:hover svg path {
+  fill: #2196F3;
 }
 
 /*----FOOTER*/

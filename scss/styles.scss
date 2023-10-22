@@ -685,10 +685,14 @@ body {
    justify-content: space-between;
 }
 
-.social-item__link:before {
-}
+.social-item__link {
+   &:hover svg path {
+      fill: white;
+   }
 
-.social-item__link:hover {   
+   &:hover svg rect {
+      fill: white;
+   }
 }
 
 /*----CLIENTS*/
@@ -747,7 +751,14 @@ body {
 }
 .item-column__icon {
 }
-.item-column__link {
+.item-column__link {   
+   & svg path{
+      transition: all 0.5s ease 0s;
+   } 
+
+   &:hover svg path{
+      fill: #2196F3;
+   }
 }
 
 /*----FOOTER*/
