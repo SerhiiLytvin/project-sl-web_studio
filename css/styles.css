@@ -771,7 +771,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
 }
 .social-item__link .social-item__link-icon path {
-  transition: all 0.5s ease 0s;
+  transition: all 1s ease 0s;
 }
 .social-item__link:hover .social-item__link-circle path {
   fill: #2196F3;
@@ -953,6 +953,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .footer-list__link .footer-list__link-icon {
   position: absolute;
+}
+.footer-list__link:hover .footer-list__link-circle path {
+  fill: #2196F3;
+  fill-opacity: 1;
+}
+.footer-list__link .footer-list__link-circle path {
+  transition: all 1s ease 0s;
 }
 
 .footer__form {

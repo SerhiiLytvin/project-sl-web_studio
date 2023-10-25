@@ -698,7 +698,7 @@ body {
    }
 
    & .social-item__link-icon path {
-      transition: all 0.5s ease 0s;
+      transition: all 1s ease 0s;
    }
 
    &:hover .social-item__link-circle path {
@@ -884,12 +884,20 @@ body {
 
    & .footer-list__link-circle {
       position: relative;
-   } 
+   }
 
    & .footer-list__link-icon {
       position: absolute;
    }
 
+   &:hover .footer-list__link-circle path {
+      fill: #2196F3;
+      fill-opacity: 1;
+   }
+
+   & .footer-list__link-circle path{
+      transition: all 1s ease 0s;
+   }
 }
 .footer__form {
    flex: 0 1 48.72%;
