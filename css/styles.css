@@ -1050,3 +1050,48 @@ h1, h2, h3, h4, h5, h6 {
 .form__subscription button img {
   padding: 0px 0px 0px 10px;
 }
+
+/*----PORTFOLIO*/
+.portfolio {
+  flex: 1 1 auto;
+  margin: 174px 0px 94px 0px;
+}
+
+.portfolio__body {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 30px;
+}
+
+.content-portfolio__description {
+  margin: 0px 0px 20px 0px;
+  padding: 63px 24px;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 155.556%;
+  letter-spacing: 0.54px;
+  background: rgba(33, 150, 243, 0.9);
+}
+
+.content-portfolio__header {
+  padding: 0px 24px;
+}
+
+.content-portfolio__title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 1.08px;
+  margin: 0px 0px 4px 0px;
+}
+
+.content-portfolio__subtitle {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.875;
+}
+
+.content-portfolio__icon {
+  margin: 0px 0px 20px 0px;
+}
